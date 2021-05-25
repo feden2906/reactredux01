@@ -1,2 +1,2 @@
-# reactredux01
+# proectredux01
 Created with CodeSandbox
