@@ -1,12 +1,10 @@
-// Імпортуємо все з createStore в бібліотеку redux
-import { createStore } from "redux";
 // початковий стан стану
-const initialstate = {
+const initialState = {
   counter: 0
 };
 //Створюємо функцію яка змінюватиме початковий стан
 // на початковому етапі state має undefined
-const storeChanger = (state = initialstate, action) => {
+export const storeChanger = (state = initialState, action) => {
   console.log("called store changer", state, action);
 
   if (action.type === "INCREMENT") {
@@ -36,5 +34,3 @@ const storeChanger = (state = initialstate, action) => {
   return state;
 };
 
-export const store = createStore(storeChanger);
-console.log(store);

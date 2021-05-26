@@ -1,8 +1,7 @@
 import React from "react";
-import Counter from "./components/Counter";
-//Імпортуємо Provider з бібліотеки react-redux
+import { Counter } from "./components/Counter";
 import { Provider } from "react-redux";
-import { store } from "redux";
+import { store }  from "./store";
 
 import "./styles.css";
 
